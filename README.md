@@ -36,7 +36,7 @@ how to benchmark
 ----
     $ make bench
 
-    ab -t 5 -c 10 http://127.0.0.1:8000/with_lager
+    ab -t 5 -c 10 http://127.0.0.1:8000/lager_alert
     Requests per second:    45.12 [#/sec] (mean)
     ....
     ab -t 5 -c 10 http://127.0.0.1:8000/lager_warn

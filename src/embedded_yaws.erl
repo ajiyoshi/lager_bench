@@ -71,7 +71,7 @@ make_yaws_conf() ->
                  {listen, {127,0,0,1}},
                  {docroot, Docroot},
                  {appmods, [
-                         {"/with_lager", appmod_with_lager}
+                         {"/lager_alert", appmod_lager_alert}
                          ,{"/lager_warn", appmod_lager_warn}
                          ,{"/without_lager", appmod_without_lager}
                          ,{"/log4erl", appmod_log4erl}

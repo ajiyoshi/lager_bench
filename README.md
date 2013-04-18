@@ -1,6 +1,8 @@
 lager force the writing "sync" in the log level prior to error
 =====
 
+https://github.com/basho/lager/issues/133
+
 prerequire
 ----
 * erlc

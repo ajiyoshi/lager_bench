@@ -1,4 +1,4 @@
--module(appmod_with_lager).
+-module(appmod_lager_alert).
 -export([out/1]).
 
 out(_) ->

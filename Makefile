@@ -24,5 +24,6 @@ run: compile
 
 bench:
 	ab -t 5 -c 10 http://127.0.0.1:8000/with_lager
-	ab -t 5 -c 10 http://127.0.0.1:8000/without_lager
+	#ab -t 5 -c 10 http://127.0.0.1:8000/without_lager
+	ab -t 5 -c 10 http://127.0.0.1:8000/lager_warn
 	ab -t 5 -c 10 http://127.0.0.1:8000/log4erl

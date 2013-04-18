@@ -2,5 +2,5 @@
 -export([out/1]).
 
 out(_) ->
-    lager:warn("hoge"),
+    lager:warning("hoge"),
     {content, "text/plain", "hello with lagger"}.

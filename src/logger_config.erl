@@ -6,7 +6,8 @@
 -define(HANDLERS, 
         [
          {lager_file_backend, [
-          [{"log/lager.log", alert, 10485760, "$D05", 5}, {lager_default_formatter, [date, " (", time, "),", message, "\n"]}]
+          [{"log/lager_alert.log", alert, 10485760, "$D05", 5}, {lager_default_formatter, [date, " (", time, "),", message, "\n"]}]
+          ,[{"log/lager_warn.log", warning, 10485760, "$D05", 5}, {lager_default_formatter, [date, " (", time, "),", message, "\n"]}]
         ]}]).
 
 start() ->

@@ -36,13 +36,17 @@ how to benchmark
 ----
     $ make bench
 
-    ab -t 5 -c 10 http://127.0.0.1:8000/lager_alert
-    Requests per second:    45.12 [#/sec] (mean)
-    ....
-    ab -t 5 -c 10 http://127.0.0.1:8000/lager_warn
-    Requests per second:    7248.91 [#/sec] (mean)
-    ....
-    ab -t 5 -c 10 http://127.0.0.1:8000/log4erl
-    Requests per second:    9129.36 [#/sec] (mean)
-    ....
+    ab -t 5 -c 10 http://127.0.0.1:8000/lager_alert 
+    ...
+    Requests per second:    23.63 [#/sec] (mean)
+    ...
+
+    ab -t 5 -c 10 http://127.0.0.1:8000/lager_warn 
+    ...
+    Requests per second:    10853.13 [#/sec] (mean)
+    ...
+
+    ab -t 5 -c 10 http://127.0.0.1:8000/log4erl 
+    ...
+    Requests per second:    9329.31 [#/sec] (mean)
 
